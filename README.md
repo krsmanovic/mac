@@ -16,6 +16,7 @@ Then make cron job execjutable and run it once in order to download IEEE MAC add
 sudo chmod +x /etc/cron.monthly/oui
 sudo /etc/cron.monthly/oui
 ```
+This way database is updated once a month. :)
 
 ## Usage instructions
 
