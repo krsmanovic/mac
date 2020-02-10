@@ -4,7 +4,7 @@ Are you tired of going online every time you need to search OUI database? Introd
 
 ## Installation
 
-First make sure that `/usr/local/bin` is in your $PATH and then download `bash` files to your machine:
+First make sure that `/usr/local/bin` is in your `$PATH` and then download `bash` files to your machine:
 
 ```
 sudo wget -O /etc/cron.monthly/oui https://raw.githubusercontent.com/krsmanovic/mac/master/oui
@@ -29,4 +29,4 @@ or
 ```
 mac ADDRESS
 ```
-where `ADDRESS` is either whole or partial (at least 6 characters), formatted in any way you got.
+where `ADDRESS` is either whole or partial string (at least 6 characters), regardless of special characters.
