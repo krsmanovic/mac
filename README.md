@@ -9,7 +9,7 @@ First make sure that `/usr/local/bin` is in your `$PATH` and then download bash 
 sudo wget -O /etc/cron.monthly/oui https://raw.githubusercontent.com/krsmanovic/mac/master/oui
 sudo wget -O /usr/local/bin/mac https://raw.githubusercontent.com/krsmanovic/mac/master/mac
 ```
-Then make cron both cron and script executable:
+Then make both cron job and script executable:
 ```
 sudo chmod +x /etc/cron.monthly/oui /usr/local/bin/mac
 ```
