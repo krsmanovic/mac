@@ -13,7 +13,7 @@ fi
 
 # Variable for storing the parsed input
 # Removing all the special characters and converting to upper case
-sanitize=$(echo $1 | sed 's/[^0-9a-zA-Z]*//g' | awk '{print toupper($0)}')
+sanitize=$(echo $1 | sed 's/[^0-9a-fA-F]*//g' | awk '{print toupper($0)}')
 
 # Function for printing out the result
 print_result () {
