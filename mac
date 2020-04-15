@@ -38,7 +38,7 @@ elif [ ${#sanitize} -lt 6 -o ${#sanitize} -gt 12 ]; then
 	echo ""
 	echo -n "Enter proper MAC adress: "
 	read mac
-	sanitize=$(echo $mac | sed 's/[^0-9a-zA-Z]*//g' | awk '{print toupper($0)}')
+	sanitize=$(echo $mac | sed 's/[^0-9a-fA-F]*//g' | awk '{print toupper($0)}')
 	if [ ${#sanitize} -lt 6 -o ${#sanitize} -gt 12 ]; then
 		# We do not want to iterate the same prompt forever
 		echo "Please get sober and try again."
